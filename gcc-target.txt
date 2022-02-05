@@ -1,0 +1,449 @@
+The following options are target specific:
+  -m128bit-long-double        sizeof(long double) is 16.
+  -m16                        Generate 16bit i386 code.
+  -m32                        Generate 32bit i386 code.
+  -m3dnow                     Support 3DNow! built-in functions.
+  -m3dnowa                    Support Athlon 3Dnow! built-in functions.
+  -m64                        Generate 64bit x86-64 code.
+  -m80387                     Use hardware fp.
+  -m8bit-idiv                 Expand 32bit/64bit integer divide into 8bit unsigned integer divide with run-time check.
+  -m96bit-long-double         sizeof(long double) is 12.
+  -mabi=                      Generate code that conforms to the given ABI.
+  -mabm                       Support code generation of Advanced Bit Manipulation (ABM) instructions.
+  -maccumulate-outgoing-args  Reserve space for outgoing arguments in the function prologue.
+  -maddress-mode=             Use given address mode.
+  -madx                       Support flag-preserving add-carry instructions.
+  -maes                       Support AES built-in functions and code generation.
+  -malign-data=               Use the given data alignment.
+  -malign-double              Align some doubles on dword boundary.
+  -malign-functions=          Function starts are aligned to this power of 2.
+  -malign-jumps=              Jump targets are aligned to this power of 2.
+  -malign-loops=              Loop code aligned to this power of 2.
+  -malign-stringops           Align destination of the string operations.
+  -mandroid                   Generate code for the Android platform.
+  -march=                     Generate code for given CPU.
+  -masm=                      Use given assembler dialect.
+  -mavx                       Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2 and AVX built-in functions and code generation.
+  -mavx2                      Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX and AVX2 built-in functions and code generation.
+  -mavx256-split-unaligned-load Split 32-byte AVX unaligned load.
+  -mavx256-split-unaligned-store Split 32-byte AVX unaligned store.
+  -mavx5124fmaps              Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2, AVX512F and AVX5124FMAPS built-in functions and code generation.
+  -mavx5124vnniw              Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2, AVX512F and AVX5124VNNIW built-in functions and code generation.
+  -mavx512bw                  Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512BW built-in functions and code generation.
+  -mavx512cd                  Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512CD built-in functions and code generation.
+  -mavx512dq                  Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512DQ built-in functions and code generation.
+  -mavx512er                  Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512ER built-in functions and code generation.
+  -mavx512f                   Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F built-in functions and code generation.
+  -mavx512ifma                Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512IFMA built-in functions and code generation.
+  -mavx512pf                  Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512PF built-in functions and code generation.
+  -mavx512vbmi                Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512VBMI built-in functions and code generation.
+  -mavx512vl                  Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2 and AVX512F and AVX512VL built-in functions and code generation.
+  -mavx512vpopcntdq           Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2, AVX512F and AVX512VPOPCNTDQ built-in functions and code generation.
+  -mbionic                    Use Bionic C library.
+  -mbmi                       Support BMI built-in functions and code generation.
+  -mbmi2                      Support BMI2 built-in functions and code generation.
+  -mbranch-cost=              Branches are this expensive (1-5, arbitrary units).
+  -mcld                       Generate cld instruction in the function prologue.
+  -mclflushopt                Support CLFLUSHOPT instructions.
+  -mclwb                      Support CLWB instruction.
+  -mclzero                    Support CLZERO built-in functions and code generation.
+  -mcmodel=                   Use given x86-64 code model.
+  -mcrc32                     Support code generation of crc32 instruction.
+  -mcx16                      Support code generation of cmpxchg16b instruction.
+  -mdispatch-scheduler        Do dispatch scheduling if processor is bdver1, bdver2, bdver3, bdver4 or znver1 and Haifa scheduling is selected.
+  -mf16c                      Support F16C built-in functions and code generation.
+  -mfancy-math-387            Generate sin, cos, sqrt for FPU.
+  -mfentry                    Emit profiling counter call at function entry before prologue.
+  -mfma                       Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX and FMA built-in functions and code generation.
+  -mfma4                      Support FMA4 built-in functions and code generation.
+  -mforce-drap                Always use Dynamic Realigned Argument Pointer (DRAP) to realign stack.
+  -mfp-ret-in-387             Return values of functions in FPU registers.
+  -mfpmath=                   Generate floating point mathematics using given instruction set.
+  -mfsgsbase                  Support FSGSBASE built-in functions and code generation.
+  -mfunction-return=          Convert function return to call and return thunk.
+  -mfxsr                      Support FXSAVE and FXRSTOR instructions.
+  -mgeneral-regs-only         Generate code which uses only the general registers.
+  -mglibc                     Use GNU C library.
+  -mhard-float                Use hardware fp.
+  -mhle                       Support Hardware Lock Elision prefixes.
+  -miamcu                     Generate code that conforms to Intel MCU psABI.
+  -mieee-fp                   Use IEEE math for fp comparisons.
+  -mincoming-stack-boundary=  Assume incoming stack aligned to this power of 2.
+  -mindirect-branch-register  Force indirect call and jump via register.
+  -mindirect-branch=          Convert indirect call and jump to call and return thunks.
+  -minline-all-stringops      Inline all known string operations.
+  -minline-stringops-dynamically Inline memset/memcpy string operations, but perform inline version only for small blocks.
+  -mlarge-data-threshold=<number> Data greater than given threshold will go into .ldata section in x86-64 medium model.
+  -mlong-double-128           Use 128-bit long double.
+  -mlong-double-64            Use 64-bit long double.
+  -mlong-double-80            Use 80-bit long double.
+  -mlwp                       Support LWP built-in functions and code generation.
+  -mlzcnt                     Support LZCNT built-in function and code generation.
+  -mmemcpy-strategy=          Specify memcpy expansion strategy when expected size is known.
+  -mmemset-strategy=          Specify memset expansion strategy when expected size is known.
+  -mmitigate-rop              Attempt to avoid generating instruction sequences containing ret bytes.
+  -mmmx                       Support MMX built-in functions.
+  -mmovbe                     Support code generation of movbe instruction.
+  -mmpx                       Support MPX code generation.
+  -mms-bitfields              Use native (MS) bitfield layout.
+  -mmusl                      Use musl C library.
+  -mmwaitx                    Support MWAITX and MONITORX built-in functions and code generation.
+  -mno-default                Clear all tune features.
+  -mno-sse4                   Do not support SSE4.1 and SSE4.2 built-in functions and code generation.
+  -mnop-mcount                Generate mcount/__fentry__ calls as nops. To activate they need to be patched in.
+  -momit-leaf-frame-pointer   Omit the frame pointer in leaf functions.
+  -mpc32                      Set 80387 floating-point precision to 32-bit.
+  -mpc64                      Set 80387 floating-point precision to 64-bit.
+  -mpc80                      Set 80387 floating-point precision to 80-bit.
+  -mpclmul                    Support PCLMUL built-in functions and code generation.
+  -mpku                       Support PKU built-in functions and code generation.
+  -mpopcnt                    Support code generation of popcnt instruction.
+  -mprefer-avx128             Use 128-bit AVX instructions instead of 256-bit AVX instructions in the auto-vectorizer.
+  -mpreferred-stack-boundary= Attempt to keep stack aligned to this power of 2.
+  -mprefetchwt1               Support PREFETCHWT1 built-in functions and code generation.
+  -mprfchw                    Support PREFETCHW instruction.
+  -mpush-args                 Use push instructions to save outgoing arguments.
+  -mrdpid                     Support RDPID built-in functions and code generation.
+  -mrdrnd                     Support RDRND built-in functions and code generation.
+  -mrdseed                    Support RDSEED instruction.
+  -mrecip                     Generate reciprocals instead of divss and sqrtss.
+  -mrecip=                    Control generation of reciprocal estimates.
+  -mrecord-mcount             Generate __mcount_loc section with all mcount or __fentry__ calls.
+  -mred-zone                  Use red-zone in the x86-64 code.
+  -mregparm=                  Number of registers used to pass integer arguments.
+  -mrtd                       Alternate calling convention.
+  -mrtm                       Support RTM built-in functions and code generation.
+  -msahf                      Support code generation of sahf instruction in 64bit x86-64 code.
+  -msgx                       Support SGX built-in functions and code generation.
+  -msha                       Support SHA1 and SHA256 built-in functions and code generation.
+  -mskip-rax-setup            Skip setting up RAX register when passing variable arguments.
+  -msoft-float                Do not use hardware fp.
+  -msse                       Support MMX and SSE built-in functions and code generation.
+  -msse2                      Support MMX, SSE and SSE2 built-in functions and code generation.
+  -msse2avx                   Encode SSE instructions with VEX prefix.
+  -msse3                      Support MMX, SSE, SSE2 and SSE3 built-in functions and code generation.
+  -msse4                      Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1 and SSE4.2 built-in functions and code generation.
+  -msse4.1                    Support MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1 built-in functions and code generation.
+  -msse4.2                    Support MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1 and SSE4.2 built-in functions and code generation.
+  -msse4a                     Support MMX, SSE, SSE2, SSE3 and SSE4A built-in functions and code generation.
+  -msseregparm                Use SSE register passing conventions for SF and DF mode.
+  -mssse3                     Support MMX, SSE, SSE2, SSE3 and SSSE3 built-in functions and code generation.
+  -mstack-arg-probe           Enable stack probing.
+  -mstack-protector-guard=    Use given stack-protector guard.
+  -mstackrealign              Realign stack in prologue.
+  -mstringop-strategy=        Chose strategy to generate stringop using.
+  -mstv                       Disable Scalar to Vector optimization pass transforming 64-bit integer computations into a vector ones.
+  -mtbm                       Support TBM built-in functions and code generation.
+  -mtls-dialect=              Use given thread-local storage dialect.
+  -mtls-direct-seg-refs       Use direct references against %gs when accessing tls data.
+  -mtune-ctrl=                Fine grain control of tune features.
+  -mtune=                     Schedule code for given CPU.
+  -muclibc                    Use uClibc C library.
+  -mveclibabi=                Vector library ABI to use.
+  -mvect8-ret-in-mem          Return 8-byte vectors in memory.
+  -mvzeroupper                Generate vzeroupper instruction before a transfer of control flow out of the function.
+  -mx32                       Generate 32bit x86-64 code.
+  -mxop                       Support XOP built-in functions and code generation.
+  -mxsave                     Support XSAVE and XRSTOR instructions.
+  -mxsavec                    Support XSAVEC instructions.
+  -mxsaveopt                  Support XSAVEOPT instruction.
+  -mxsaves                    Support XSAVES and XRSTORS instructions.
+
+  Known assembler dialects (for use with the -masm= option):
+    att intel
+
+  Known ABIs (for use with the -mabi= option):
+    ms sysv
+
+  Known code models (for use with the -mcmodel= option):
+    32 kernel large medium small
+
+  Valid arguments to -mfpmath=:
+    387 387+sse 387,sse both sse sse+387 sse,387
+
+  Known indirect branch choices (for use with the -mindirect-branch=/-mfunction-return= options):
+    keep thunk thunk-extern thunk-inline
+
+  Known data alignment choices (for use with the -malign-data= option):
+    abi cacheline compat
+
+  Known vectorization library ABIs (for use with the -mveclibabi= option):
+    acml svml
+
+  Known address mode (for use with the -maddress-mode= option):
+    long short
+
+  Known stack protector guard (for use with the -mstack-protector-guard= option):
+    global tls
+
+  Valid arguments to -mstringop-strategy=:
+    byte_loop libcall loop rep_4byte rep_8byte rep_byte unrolled_loop vector_loop
+
+  Known TLS dialects (for use with the -mtls-dialect= option):
+    gnu gnu2
+
+Assembler options
+=================
+
+Use "-Wa,OPTION" to pass "OPTION" to the assembler.
+
+  -Q                      ignored
+  -V                      print assembler version number
+  -k                      ignored
+  -n                      Do not optimize code alignment
+  -q                      quieten some warnings
+  -s                      ignored
+  --32/--64/--x32         generate 32bit/64bit/x32 code
+  --divide                ignored
+  -march=CPU[,+EXTENSION...]
+                          generate code for CPU and EXTENSION, CPU is one of:
+                           generic32, generic64, i386, i486, i586, i686,
+                           pentium, pentiumpro, pentiumii, pentiumiii, pentium4,
+                           prescott, nocona, core, core2, corei7, l1om, k1om,
+                           iamcu, k6, k6_2, athlon, opteron, k8, amdfam10,
+                           bdver1, bdver2, bdver3, bdver4, znver1, btver1,
+                           btver2
+                          EXTENSION is combination of:
+                           8087, 287, 387, 687, mmx, sse, sse2, sse3, ssse3,
+                           sse4.1, sse4.2, sse4, avx, avx2, avx512f, avx512cd,
+                           avx512er, avx512pf, avx512dq, avx512bw, avx512vl,
+                           vmx, vmfunc, smx, xsave, xsaveopt, xsavec, xsaves,
+                           aes, pclmul, fsgsbase, rdrnd, f16c, bmi2, fma, fma4,
+                           xop, lwp, movbe, cx16, ept, lzcnt, hle, rtm, invpcid,
+                           clflush, nop, syscall, rdtscp, 3dnow, 3dnowa,
+                           padlock, svme, sse4a, abm, bmi, tbm, adx, rdseed,
+                           prfchw, smap, mpx, sha, clflushopt, prefetchwt1, se1,
+                           clwb, avx512ifma, avx512vbmi, avx512_4fmaps,
+                           avx512_4vnniw, avx512_vpopcntdq, avx512_vbmi2,
+                           avx512_vnni, avx512_bitalg, clzero, mwaitx, ospke,
+                           rdpid, ptwrite, cet, gfni, vaes, vpclmulqdq, no87,
+                           no287, no387, no687, nommx, nosse, nosse2, nosse3,
+                           nossse3, nosse4.1, nosse4.2, nosse4, noavx, noavx2,
+                           noavx512f, noavx512cd, noavx512er, noavx512pf,
+                           noavx512dq, noavx512bw, noavx512vl, noavx512ifma,
+                           noavx512vbmi, noavx512_4fmaps, noavx512_4vnniw,
+                           noavx512_vpopcntdq, noavx512_vbmi2, noavx512_vnni,
+                           noavx512_bitalg
+  -mtune=CPU              optimize for CPU, CPU is one of:
+                           generic32, generic64, i8086, i186, i286, i386, i486,
+                           i586, i686, pentium, pentiumpro, pentiumii,
+                           pentiumiii, pentium4, prescott, nocona, core, core2,
+                           corei7, l1om, k1om, iamcu, k6, k6_2, athlon, opteron,
+                           k8, amdfam10, bdver1, bdver2, bdver3, bdver4, znver1,
+                           btver1, btver2
+  -msse2avx               encode SSE instructions with VEX prefix
+  -msse-check=[none|error|warning]
+                          check SSE instructions
+  -moperand-check=[none|error|warning]
+                          check operand combinations for validity
+  -mavxscalar=[128|256]   encode scalar AVX instructions with specific vector
+                           length
+  -mevexlig=[128|256|512] encode scalar EVEX instructions with specific vector
+                           length
+  -mevexwig=[0|1]         encode EVEX instructions with specific EVEX.W value
+                           for EVEX.W bit ignored instructions
+  -mevexrcig=[rne|rd|ru|rz]
+                          encode EVEX instructions with specific EVEX.RC value
+                           for SAE-only ignored instructions
+  -mmnemonic=[att|intel]  use AT&T/Intel mnemonic
+  -msyntax=[att|intel]    use AT&T/Intel syntax
+  -mindex-reg             support pseudo index registers
+  -mnaked-reg             don't require `%' prefix for registers
+  -mold-gcc               support old (<= 2.8.1) versions of gcc
+  -madd-bnd-prefix        add BND prefix for all valid branches
+  -mshared                disable branch optimization for shared code
+  -momit-lock-prefix=[no|yes]
+                          strip all lock prefixes
+  -mfence-as-lock-add=[no|yes]
+                          encode lfence, mfence and sfence as
+                           lock addl $0x0, (%{re}sp)
+  -mrelax-relocations=[no|yes]
+                          generate relax relocations
+  -mamd64                 accept only AMD64 ISA
+  -mintel64               accept only Intel64 ISA
+
+Linker options
+==============
+
+Use "-Wl,OPTION" to pass "OPTION" to the linker.
+
+elf_x86_64: 
+  -z noextern-protected-data  Do not treat protected data symbol as external
+  -z dynamic-undefined-weak   Make undefined weak symbols dynamic
+  -z nodynamic-undefined-weak Do not make undefined weak symbols dynamic
+  -z noreloc-overflow         Disable relocation overflow check
+  -z call-nop=PADDING         Use PADDING as 1-byte NOP for branch
+  -z ibtplt                   Generate IBT-enabled PLT entries
+  -z ibt                      Generate GNU_PROPERTY_X86_FEATURE_1_IBT
+  -z shstk                    Generate GNU_PROPERTY_X86_FEATURE_1_SHSTK
+  -z bndplt                   Always generate BND prefix in PLT entries
+elf32_x86_64: 
+  -z noextern-protected-data  Do not treat protected data symbol as external
+  -z dynamic-undefined-weak   Make undefined weak symbols dynamic
+  -z nodynamic-undefined-weak Do not make undefined weak symbols dynamic
+  -z noreloc-overflow         Disable relocation overflow check
+  -z call-nop=PADDING         Use PADDING as 1-byte NOP for branch
+  -z ibtplt                   Generate IBT-enabled PLT entries
+  -z ibt                      Generate GNU_PROPERTY_X86_FEATURE_1_IBT
+  -z shstk                    Generate GNU_PROPERTY_X86_FEATURE_1_SHSTK
+elf_i386: 
+  -z noextern-protected-data  Do not treat protected data symbol as external
+  -z dynamic-undefined-weak   Make undefined weak symbols dynamic
+  -z nodynamic-undefined-weak Do not make undefined weak symbols dynamic
+  -z call-nop=PADDING         Use PADDING as 1-byte NOP for branch
+  -z ibtplt                   Generate IBT-enabled PLT entries
+  -z ibt                      Generate GNU_PROPERTY_X86_FEATURE_1_IBT
+  -z shstk                    Generate GNU_PROPERTY_X86_FEATURE_1_SHSTK
+elf_iamcu: 
+  -z noextern-protected-data  Do not treat protected data symbol as external
+  -z dynamic-undefined-weak   Make undefined weak symbols dynamic
+  -z nodynamic-undefined-weak Do not make undefined weak symbols dynamic
+  -z call-nop=PADDING         Use PADDING as 1-byte NOP for branch
+elf_l1om: 
+  -z noextern-protected-data  Do not treat protected data symbol as external
+  -z dynamic-undefined-weak   Make undefined weak symbols dynamic
+  -z nodynamic-undefined-weak Do not make undefined weak symbols dynamic
+  -z call-nop=PADDING         Use PADDING as 1-byte NOP for branch
+elf_k1om: 
+  -z noextern-protected-data  Do not treat protected data symbol as external
+  -z dynamic-undefined-weak   Make undefined weak symbols dynamic
+  -z nodynamic-undefined-weak Do not make undefined weak symbols dynamic
+  -z call-nop=PADDING         Use PADDING as 1-byte NOP for branch
+i386pep: 
+  --base_file <basefile>             Generate a base file for relocatable DLLs
+  --dll                              Set image base to the default for DLLs
+  --file-alignment <size>            Set file alignment
+  --heap <size>                      Set initial size of the heap
+  --image-base <address>             Set start address of the executable
+  --major-image-version <number>     Set version number of the executable
+  --major-os-version <number>        Set minimum required OS version
+  --major-subsystem-version <number> Set minimum required OS subsystem version
+  --minor-image-version <number>     Set revision number of the executable
+  --minor-os-version <number>        Set minimum required OS revision
+  --minor-subsystem-version <number> Set minimum required OS subsystem revision
+  --section-alignment <size>         Set section alignment
+  --stack <size>                     Set size of the initial stack
+  --subsystem <name>[:<version>]     Set required OS subsystem [& version]
+  --support-old-code                 Support interworking with old code
+  --[no-]leading-underscore          Set explicit symbol underscore prefix mode
+  --[no-]insert-timestamp            Use a real timestamp rather than zero. (default)
+                                     This makes binaries non-deterministic
+  --add-stdcall-alias                Export symbols with and without @nn
+  --disable-stdcall-fixup            Don't link _sym to _sym@nn
+  --enable-stdcall-fixup             Link _sym to _sym@nn without warnings
+  --exclude-symbols sym,sym,...      Exclude symbols from automatic export
+  --exclude-all-symbols              Exclude all symbols from automatic export
+  --exclude-libs lib,lib,...         Exclude libraries from automatic export
+  --exclude-modules-for-implib mod,mod,...
+                                     Exclude objects, archive members from auto
+                                     export, place into import library instead.
+  --export-all-symbols               Automatically export all globals to DLL
+  --kill-at                          Remove @nn from exported symbols
+  --output-def <file>                Generate a .DEF file for the built DLL
+  --warn-duplicate-exports           Warn about duplicate exports.
+  --compat-implib                    Create backward compatible import libs;
+                                       create __imp_<SYMBOL> as well.
+  --enable-auto-image-base           Automatically choose image base for DLLs
+                                       unless user specifies one
+  --disable-auto-image-base          Do not auto-choose image base. (default)
+  --dll-search-prefix=<string>       When linking dynamically to a dll without
+                                       an importlib, use <string><basename>.dll
+                                       in preference to lib<basename>.dll 
+  --enable-auto-import               Do sophisticated linking of _sym to
+                                       __imp_sym for DATA references
+  --disable-auto-import              Do not auto-import DATA items from DLLs
+  --enable-runtime-pseudo-reloc      Work around auto-import limitations by
+                                       adding pseudo-relocations resolved at
+                                       runtime.
+  --disable-runtime-pseudo-reloc     Do not add runtime pseudo-relocations for
+                                       auto-imported DATA.
+  --enable-extra-pep-debug            Enable verbose debug output when building
+                                       or linking to DLLs (esp. auto-import)
+  --enable-long-section-names        Use long COFF section names even in
+                                       executable image files
+  --disable-long-section-names       Never use long COFF section names, even
+                                       in object files
+  --high-entropy-va                  Image is compatible with 64-bit address space
+                                       layout randomization (ASLR)
+  --dynamicbase			 Image base address may be relocated using
+				       address space layout randomization (ASLR)
+  --forceinteg		 Code integrity checks are enforced
+  --nxcompat		 Image is compatible with data execution prevention
+  --no-isolation		 Image understands isolation but do not isolate the image
+  --no-seh			 Image does not use SEH. No SE handler may
+				       be called in this image
+  --no-bind			 Do not bind this image
+  --wdmdriver		 Driver uses the WDM model
+  --tsaware                  Image is Terminal Server aware
+  --build-id[=STYLE]         Generate build ID
+i386pe: 
+  --base_file <basefile>             Generate a base file for relocatable DLLs
+  --dll                              Set image base to the default for DLLs
+  --file-alignment <size>            Set file alignment
+  --heap <size>                      Set initial size of the heap
+  --image-base <address>             Set start address of the executable
+  --major-image-version <number>     Set version number of the executable
+  --major-os-version <number>        Set minimum required OS version
+  --major-subsystem-version <number> Set minimum required OS subsystem version
+  --minor-image-version <number>     Set revision number of the executable
+  --minor-os-version <number>        Set minimum required OS revision
+  --minor-subsystem-version <number> Set minimum required OS subsystem revision
+  --section-alignment <size>         Set section alignment
+  --stack <size>                     Set size of the initial stack
+  --subsystem <name>[:<version>]     Set required OS subsystem [& version]
+  --support-old-code                 Support interworking with old code
+  --[no-]leading-underscore          Set explicit symbol underscore prefix mode
+  --thumb-entry=<symbol>             Set the entry point to be Thumb <symbol>
+  --[no-]insert-timestamp            Use a real timestamp rather than zero (default).
+                                     This makes binaries non-deterministic
+  --add-stdcall-alias                Export symbols with and without @nn
+  --disable-stdcall-fixup            Don't link _sym to _sym@nn
+  --enable-stdcall-fixup             Link _sym to _sym@nn without warnings
+  --exclude-symbols sym,sym,...      Exclude symbols from automatic export
+  --exclude-all-symbols              Exclude all symbols from automatic export
+  --exclude-libs lib,lib,...         Exclude libraries from automatic export
+  --exclude-modules-for-implib mod,mod,...
+                                     Exclude objects, archive members from auto
+                                     export, place into import library instead.
+  --export-all-symbols               Automatically export all globals to DLL
+  --kill-at                          Remove @nn from exported symbols
+  --output-def <file>                Generate a .DEF file for the built DLL
+  --warn-duplicate-exports           Warn about duplicate exports
+  --compat-implib                    Create backward compatible import libs;
+                                       create __imp_<SYMBOL> as well.
+  --enable-auto-image-base[=<address>] Automatically choose image base for DLLs
+                                       (optionally starting with address) unless
+                                       specifically set with --image-base
+  --disable-auto-image-base          Do not auto-choose image base. (default)
+  --dll-search-prefix=<string>       When linking dynamically to a dll without
+                                       an importlib, use <string><basename>.dll
+                                       in preference to lib<basename>.dll 
+  --enable-auto-import               Do sophisticated linking of _sym to
+                                       __imp_sym for DATA references
+  --disable-auto-import              Do not auto-import DATA items from DLLs
+  --enable-runtime-pseudo-reloc      Work around auto-import limitations by
+                                       adding pseudo-relocations resolved at
+                                       runtime.
+  --disable-runtime-pseudo-reloc     Do not add runtime pseudo-relocations for
+                                       auto-imported DATA.
+  --enable-extra-pe-debug            Enable verbose debug output when building
+                                       or linking to DLLs (esp. auto-import)
+  --large-address-aware              Executable supports virtual addresses
+                                       greater than 2 gigabytes
+  --disable-large-address-aware      Executable does not support virtual
+                                       addresses greater than 2 gigabytes
+  --enable-long-section-names        Use long COFF section names even in
+                                       executable image files
+  --disable-long-section-names       Never use long COFF section names, even
+                                       in object files
+  --dynamicbase			 Image base address may be relocated using
+				       address space layout randomization (ASLR)
+  --forceinteg		 Code integrity checks are enforced
+  --nxcompat		 Image is compatible with data execution prevention
+  --no-isolation		 Image understands isolation but do not isolate the image
+  --no-seh			 Image does not use SEH. No SE handler may
+				       be called in this image
+  --no-bind			 Do not bind this image
+  --wdmdriver		 Driver uses the WDM model
+  --tsaware                  Image is Terminal Server aware
+  --build-id[=STYLE]         Generate build ID
